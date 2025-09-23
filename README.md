@@ -1,1 +1,1 @@
-# agentic-forensic-research
+# Forensic Agent
