@@ -1,5 +1,0 @@
-./htcnotes.db
-./contacts2.db
-./telephony.db
-./profile.db
-./facebook.db
