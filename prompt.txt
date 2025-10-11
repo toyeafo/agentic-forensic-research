@@ -1,0 +1,43 @@
+Objective: Extract all emails from the forensic disk image provided.
+
+   * Image File Path: [Path to your disk image file, e.g., HTC_Desire_S.img]
+   * Analysis Strategy:
+       * Use fdisk -l to identify partition offsets.
+       * Directly analyze the partitions using the sleuthkit (fls, icat). Do not attempt to mount the image.
+       * Focus on partitions with [filesystem type, e.g., ext4] filesystems, which likely contain user data.
+   * Target Application Data:
+       * Search for application data directories belonging to [List of email clients, e.g., "Gmail", "HTC
+         Mail", "Outlook"].
+       * Locate and extract the underlying database files (typically .db files).
+   * Data Extraction:
+       * Use sqlite3 to query the extracted database files.
+       * Extract the following fields: [List of desired fields, e.g., sender, recipients, subject, body,
+         date].
+   * Output:
+       * Consolidate all found emails into a single CSV file named [Desired output file name, e.g.,
+         extracted_emails.csv].
+
+Objective: Extract all emails from the forensic disk image provided.
+
+   * Image File Path: HTC_Desire_S.img
+   * Analysis Strategy:
+       * Use fdisk -l to identify partition offsets.
+       * Directly analyze the partitions using the sleuthkit (fls, icat). Do not attempt to mount the image.
+       * Focus on partitions with ext4 filesystems, which likely contain user data.
+   * Target Application Data:
+       * Search for application data directories belonging to "Gmail" (com.google.android.gm) and "HTC Mail"
+         (com.htc.android.mail).
+       * Locate and extract the underlying database files.
+   * Data Extraction:
+       * Use sqlite3 to query the extracted database files and build a timeline using metadata.
+       * Extract the following fields: fromAddress, toAddresses, subject, and body.
+   * Output:
+       * Consolidate all found emails into a single CSV file named extracted_emails.csv.
+
+
+"You are a world-class forensic investigator specializing in digital communications. "
+"Your task is to analyze the following collection of recovered emails. Construct a detailed, "
+"chronological narrative of the events, relationships, and potential motives of the individuals involved. "
+"Structure your report clearly. Identify key events, topics of conversation, "
+"relationships between correspondents, and any potential inconsistencies or suspicious activities. "
+"Present the final output as a comprehensive story."

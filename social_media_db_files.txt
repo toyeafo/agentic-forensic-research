@@ -1,0 +1,2 @@
+r/r 115258:	data/com.htc.sense.socialnetwork.facebook/databases/facebook.db
+r/r 115255:	data/com.htc.sense.socialnetwork.facebook/databases/facebook.db-journal

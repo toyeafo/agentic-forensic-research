@@ -1,0 +1,24 @@
+CYFI 330 - 700 HTC Quiz (1)
+The HTC Desire mobile device’s contents have been imaged and extracted and you uploaded
+it to your OneDrive. You are back at the office and ready to begin the tedious process of
+recovering evidence for your extortion case. The evidence file is the same as the HTC pre-quiz
+you started last week. Please give me a written response, screenshot(s) and path(s) for every
+question. Don’t even think about asking me for extension or turning this in late.
+1. Show the email account and telephone number and profile pic for user account1
+2. What is the ICCID number of this device?
+3. You indicated the telephone number of this device in the pre-quiz. What geographic
+area is the area code registered?
+4. Show images of any three persons (do NOT use Jimi Hendrix or Steven Ray Vaugh)
+5. There is a long memo in the evidence. Please show an excerpt of this memo
+6. There are some active images. Show two of these. Hint: one jpg and one gif
+7. There is a deleted audio file. Show what type of file this is
+8. There is a deleted image file in an ‘old school’ format i.e NOT jpg format. Show this
+image and name the format.
+9. A social media account belonging to John Doe is located in the evidence. Show the
+profile pic.
+10. Your HTC evidence and all Android devices have two primary types of memory: 1.
+Volatile (RAM), 2. Non-Volatile (NAND flash) memory. From which of these two types of
+memory can I find things like passwords, encryption keys, usernames, or App data. Can
+you show an example of this in an exhibit? You must answer the question but if you
+can’t show me an example you will still get full credit. If you show me an example, then I
+may give extra credit.
