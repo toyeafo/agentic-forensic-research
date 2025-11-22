@@ -41,7 +41,7 @@ def run_agent_trial(workflow_name, system_prompt, user_query, trial_id):
     """Runs a single agent trial and saves the log."""
     
     model = genai.GenerativeModel(
-        model_name='gemini-1.5-pro-latest', # Use Pro for better reasoning
+        model_name='gemini-2.5-flash',
         tools=tools,
         system_instruction=system_prompt
     )
@@ -104,4 +104,9 @@ if __name__ == "__main__":
     
     # Run 1 Trial
     result = run_agent_trial("W1_Baseline", prompt_w1, "Find all email addresses in the database.", 1)
+
+    # PAUSE to respect rate limits
+    print("Sleeping to respect API limits...")
+    time.sleep(5) # Wait 5 seconds between trials
+    
     print("Agent Final Answer:", result)
