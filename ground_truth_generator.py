@@ -8,9 +8,6 @@ import time
 # --- CONFIGURATION ---
 DB_FOLDER_PATH = "./experiment_data" 
 OUTPUT_FILE = "gold_standard_truth.json"
-
-# Limit samples per entity type per table to keep JSON file size manageable? 
-# Set to None for FULL Ground Truth (Required for Recall calculation)
 MAX_SAMPLES = None 
 
 # --- PATTERNS (Class I: Identifiers) ---
@@ -23,9 +20,6 @@ REGEX_MAP = {
 # --- HEURISTICS (Class II & III) ---
 # Columns containing these words are treated as Temporal
 TIME_KEYWORDS = ['time', 'date', 'created', 'modified', 'duration', 'timestamp']
-
-# Columns containing these words are treated as Relational (Links/Dyads)
-RELATION_KEYWORDS = ['_id', 'userid', 'groupid', 'sender', 'receiver', 'participant', 'deviceid']
 
 def is_valid_timestamp(series):
     """Checks if a numeric series looks like recent Unix timestamps (2000-2030)."""
@@ -124,26 +118,6 @@ def scan_database(db_path, db_filename):
                                     "row_id": int(row['_pk_id'])
                                 }
                             })
-
-                # --- 3. SCAN RELATIONAL (Foreign Keys / Links) ---
-                # Strategy: Check for ID-like column names
-                for col in df.columns:
-                    if col == '_pk_id': continue
-                    
-                    if any(kw in col.lower() for kw in RELATION_KEYWORDS):
-                        # Extract non-nulls
-                        valid_rows = df[df[col].notna()]
-                        for _, row in valid_rows.iterrows():
-                            all_entities.append({
-                                "class": "Relational",
-                                "type": "foreign_key_link",
-                                "value": str(row[col]),
-                                "provenance": {
-                                    "table": table,
-                                    "column": col,
-                                    "row_id": int(row['_pk_id'])
-                                }
-                            })
                             
             except Exception as e:
                 print(f"  [!] Error reading table {table}: {e}")
@@ -186,7 +160,7 @@ def main():
         entities = scan_database(full_path, rel_path)
         
         # Summary Stats
-        stats = {"Identifier": 0, "Temporal": 0, "Relational": 0}
+        stats = {"Identifier": 0, "Temporal": 0}
         for e in entities:
             stats[e["class"]] += 1
             
