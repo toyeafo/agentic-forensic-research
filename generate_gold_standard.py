@@ -87,8 +87,38 @@ def analyze_database(db_path):
         print(f"[-] Failed to open {db_path}: {e}")
         return None
 
+# def main():
+#     print(f"[*] Starting Gold Standard Scan in: {DB_FOLDER_PATH}")
+    
+#     report = {}
+    
+#     # Ensure directory exists
+#     if not os.path.exists(DB_FOLDER_PATH):
+#         print(f"[!] Directory {DB_FOLDER_PATH} not found. Please create it and add .db files.")
+#         return
+
+#     files = [f for f in os.listdir(DB_FOLDER_PATH) if f.endswith('.db') or f.endswith('.sqlite')]
+    
+#     if not files:
+#         print("[!] No .db files found.")
+#         return
+
+#     for f in files:
+#         print(f"[*] Analyzing: {f}...")
+#         path = os.path.join(DB_FOLDER_PATH, f)
+#         data = analyze_database(path)
+#         if data:
+#             report[f] = data
+            
+#     # Save to JSON
+#     with open(OUTPUT_FILE, 'w') as f:
+#         json.dump(report, f, indent=4)
+        
+#     print(f"\n[+] Success. Gold Standard saved to: {OUTPUT_FILE}")
+#     print("    Use these counts to calculate Recall (Agent_Found / Gold_Count).")
+
 def main():
-    print(f"[*] Starting Gold Standard Scan in: {DB_FOLDER_PATH}")
+    print(f"[*] Starting Recursive Gold Standard Scan in: {DB_FOLDER_PATH}")
     
     report = {}
     
@@ -97,18 +127,32 @@ def main():
         print(f"[!] Directory {DB_FOLDER_PATH} not found. Please create it and add .db files.")
         return
 
-    files = [f for f in os.listdir(DB_FOLDER_PATH) if f.endswith('.db') or f.endswith('.sqlite')]
+    # --- CHANGED SECTION: RECURSIVE SEARCH ---
+    db_paths = []
+    for root, dirs, filenames in os.walk(DB_FOLDER_PATH):
+        for f in filenames:
+            if f.endswith('.db') or f.endswith('.sqlite'):
+                # Construct the full path
+                full_path = os.path.join(root, f)
+                db_paths.append(full_path)
+    # -----------------------------------------
     
-    if not files:
-        print("[!] No .db files found.")
+    if not db_paths:
+        print("[!] No .db files found in any subfolders.")
         return
 
-    for f in files:
-        print(f"[*] Analyzing: {f}...")
-        path = os.path.join(DB_FOLDER_PATH, f)
+    for path in db_paths:
+        # Use the filename (e.g., 'sms.db') as the report key
+        # If you have duplicate names in different folders, change this to: key = path
+        key = os.path.basename(path) 
+        
+        print(f"[*] Analyzing: {key}...")
+        
+        # 'path' is already the full path, so we pass it directly
         data = analyze_database(path)
+        
         if data:
-            report[f] = data
+            report[key] = data
             
     # Save to JSON
     with open(OUTPUT_FILE, 'w') as f:
