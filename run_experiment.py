@@ -13,21 +13,42 @@ LOG_DIR = "experiment_logs"
 # Configure Gemini
 genai.configure(api_key=API_KEY)
 
-# --- HELPER: Fix JSON Serialization Error ---
+# --- HELPER: Fix JSON Serialization Error (Updated) ---
 def make_serializable(obj):
-    """Recursively converts Google's MapComposite/RepeatedComposite to dict/list."""
-    if isinstance(obj, (str, int, float, bool, type(None))):
+    """Recursively converts Google's internal Protobuf types to standard dicts/lists."""
+    # 1. Handle Primitive Types (Int, Float, Bool, None, Str)
+    if isinstance(obj, (int, float, bool, type(None), str)):
         return obj
-    elif isinstance(obj, dict):
+    
+    # 2. Handle Dict-like objects (MapComposite)
+    # We check if it has an 'items' method to identify it as a dict
+    if hasattr(obj, 'items'):
         return {k: make_serializable(v) for k, v in obj.items()}
-    elif isinstance(obj, (list, tuple)):
+    
+    # 3. Handle List-like objects (RepeatedComposite)
+    # We check if it is iterable to identify it as a list
+    # (excluding strings, which are technically iterable but handled above)
+    if isinstance(obj, (list, tuple)) or hasattr(obj, '__iter__'):
         return [make_serializable(x) for x in obj]
-    else:
-        # Catch-all for Google's internal types (MapComposite, etc.)
-        try:
-            return dict(obj)
-        except (ValueError, TypeError):
-            return str(obj)
+    
+    # 4. Fallback: Convert to string if all else fails
+    return str(obj)
+    
+# --- HELPER: Fix JSON Serialization Error ---
+# def make_serializable(obj):
+#     """Recursively converts Google's MapComposite/RepeatedComposite to dict/list."""
+#     if isinstance(obj, (str, int, float, bool, type(None))):
+#         return obj
+#     elif isinstance(obj, dict):
+#         return {k: make_serializable(v) for k, v in obj.items()}
+#     elif isinstance(obj, (list, tuple)):
+#         return [make_serializable(x) for x in obj]
+#     else:
+#         # Catch-all for Google's internal types (MapComposite, etc.)
+#         try:
+#             return dict(obj)
+#         except (ValueError, TypeError):
+#             return str(obj)
 
 # Define the Tool (Non-destructive SQL)
 def execute_sqlite_query(query):
