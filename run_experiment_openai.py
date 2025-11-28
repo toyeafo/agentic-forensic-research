@@ -268,7 +268,7 @@ def main():
     gt_dir = Path(args.gt_dir) if args.gt_dir else None
     gt_manifest = Path(args.gt_manifest) if args.gt_manifest else None
 
-    client = OpenAI()
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
     tool_def = [{
         "type": "function",
