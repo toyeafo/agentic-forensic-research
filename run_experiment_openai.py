@@ -224,6 +224,54 @@ def score_run(findings: List[Dict[str, str]], gt_set: Set[Tuple[str, str, str]])
         "provenance_completeness": round(provenance_completeness, 4),
     }
 
+def validate_constraints(findings: List[Dict], workflow: str, entity_type: str) -> Tuple[List[Dict], List[str]]:
+    """
+    Enforces the 'Architectural Constraints' described in the paper.
+    Returns: (valid_findings, error_log)
+    """
+    valid = []
+    errors = []
+    
+    # Regex Patterns for W2
+    EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
+    UNIX_SEC_MIN = 946684800   # Year 2000
+    UNIX_SEC_MAX = 4102444800  # Year 2100
+
+    for f in findings:
+        val = str(f.get("value", "")).strip()
+        tbl = str(f.get("table", "")).strip()
+        rid = str(f.get("rowid", "")).strip()
+
+        # --- W2: Schema-Aware Pattern Matching [cite: 27] ---
+        if workflow == "w2":
+            if entity_type == "identifier":
+                # Example: If it looks like an email, strictly enforce regex
+                if "@" in val and not EMAIL_REGEX.match(val):
+                    errors.append(f"W2 Violation: Invalid email format '{val}'")
+                    continue
+            elif entity_type == "temporal":
+                # Example: Enforce numeric ranges for timestamps
+                if val.isdigit():
+                    v_int = int(val)
+                    if not (UNIX_SEC_MIN <= v_int <= UNIX_SEC_MAX):
+                        errors.append(f"W2 Violation: Timestamp '{val}' out of forensic bounds")
+                        continue
+
+        # --- W3: Provenance-Aware Binding [cite: 28] ---
+        if workflow == "w3":
+            # "Architecturally forced to bind... to a specific Table and RowID"
+            if not tbl or tbl.lower() in ["unknown", "none", ""]:
+                errors.append(f"W3 Violation: Missing Source Table for '{val}'")
+                continue
+            if not rid or rid.lower() in ["unknown", "none", ""]:
+                errors.append(f"W3 Violation: Missing RowID for '{val}'")
+                continue
+
+        valid.append(f)
+
+    return valid, errors
+
+
 # ---------- Main ----------
 def main():
     ap = argparse.ArgumentParser(description="Run agentic digital evidence experiments with OpenAI (with optional scoring).")
@@ -308,6 +356,9 @@ def main():
                     tool_log: List[Dict[str, Any]] = []
                     issued_sqls: List[str] = []
 
+                   # --- REPLACEMENT BLOCK START ---
+                    reasoning_steps = 0  # NEW: Initialize counter for I_plan metric
+
                     for step in range(args.max_steps):
                         resp = client.chat.completions.create(
                             model=args.model,
@@ -323,7 +374,13 @@ def main():
                         total_usage["completion_tokens"] += getattr(resp.usage, "completion_tokens", 0) or 0
                         total_usage["total_tokens"] += getattr(resp.usage, "total_tokens", 0) or 0
 
+                        # NEW: Capture "Thinking" logic for Planning Intensity (I_plan)
+                        content = choice.message.content
+                        if content and len(content.strip()) > 10:
+                            reasoning_steps += 1
+
                         if choice.finish_reason == "tool_calls" and choice.message.tool_calls:
+                            # (This section remains identical to your original code)
                             for tc in choice.message.tool_calls:
                                 if tc.function.name == "execute_sqlite_query":
                                     sql = json.loads(tc.function.arguments).get("sql", "")
@@ -342,18 +399,27 @@ def main():
                                         "name": "execute_sqlite_query",
                                         "content": json.dumps(result)[:8000]
                                     })
-                                    if tool_calls_used >= args.max_steps:
-                                        break
+                            
                             if tool_calls_used >= args.max_steps:
                                 messages.append({"role": "user", "content": "Finalize now with the JSON findings only."})
                                 continue
                         else:
+                            # --- FINALIZATION LOGIC (UPDATED) ---
                             content = choice.message.content or ""
                             findings = {"findings": []}
                             try:
                                 start = content.find("{"); end = content.rfind("}")
                                 if start != -1 and end != -1:
-                                    findings = json.loads(content[start:end+1])
+                                    raw_findings = json.loads(content[start:end+1]).get("findings", [])
+                                    
+                                    # NEW: Enforce Architectural Constraints (W2/W3)
+                                    final_findings, constraint_errs = validate_constraints(raw_findings, wf, entity)
+                                    
+                                    # Log constraint violations if any (optional, printed to stderr for debug)
+                                    if constraint_errs:
+                                        print(f"  [Constraint Violation] {len(constraint_errs)} items rejected in {wf}", file=sys.stderr)
+                                    
+                                    findings = {"findings": final_findings}
                             except Exception:
                                 findings = {"findings": []}
 
@@ -363,6 +429,10 @@ def main():
                             verification_calls = sum(1 for s in issued_sqls if is_verification_like(s))
                             verification_ratio = (verification_calls / sql_calls) if sql_calls > 0 else 0.0
                             self_corr = count_self_corrections(issued_sqls)
+                            
+                            # NEW: Calculate Planning Intensity
+                            total_ops = reasoning_steps + tool_calls_used
+                            i_plan = (reasoning_steps / total_ops) if total_ops > 0 else 0.0
 
                             # Optional scoring if GT available
                             gt_file = find_gt_file_for_db(gt_dir, gt_manifest, db) if (gt_dir or gt_manifest) else None
@@ -386,9 +456,10 @@ def main():
                                     "schema_exploration": schema_exploration,
                                     "verification_calls": verification_calls,
                                     "verification_ratio": round(verification_ratio, 4),
-                                    "self_corrections": self_corr
+                                    "self_corrections": self_corr,
+                                    "planning_intensity": round(i_plan, 2) # NEW: Added to output
                                 },
-                                "metrics": metrics,  # may be None if no GT
+                                "metrics": metrics,
                                 "result": findings
                             }
 
@@ -397,7 +468,7 @@ def main():
                             outname = f"{relname}.{entity}.{wf}.trial{trial}.json"
                             (outdir / outname).write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
 
-                            # Append CSV summary if metrics available
+                            # (CSV saving block remains the same...)
                             if metrics:
                                 with open(metrics_csv, "a", newline="", encoding="utf-8") as f:
                                     w = csv.writer(f)
@@ -412,9 +483,10 @@ def main():
                                         total_usage["total_tokens"]
                                     ])
 
-                            print(f"Wrote {outname} | tokens={total_usage['total_tokens']} tools={tool_calls_used} " +
-                                  (f"| P={metrics['precision']} R={metrics['recall']} H={metrics['hallucination_rate']} Prov={metrics['provenance_completeness']}" if metrics else "| (no GT)"))
+                            print(f"Wrote {outname} | PlanInt={round(i_plan,2)} | " +
+                                  (f"P={metrics['precision']} R={metrics['recall']}" if metrics else "(no GT)"))
                             break
+                    # --- REPLACEMENT BLOCK END ---
 
 if __name__ == "__main__":
     main()
