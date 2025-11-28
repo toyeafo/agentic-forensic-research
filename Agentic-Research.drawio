@@ -346,7 +346,7 @@
         <mxCell id="BViAha-d1e_LK3_VJD56-1" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/File.svg;" value="&lt;b&gt;Ground Truth&lt;/b&gt;" vertex="1">
           <mxGeometry height="85.71428571428572" width="69.56571428571428" x="1180" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="BViAha-d1e_LK3_VJD56-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="BViAha-d1e_LK3_VJD56-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;b&gt;Compare&lt;/b&gt;" vertex="1">
           <mxGeometry height="90" width="90" x="1350.22" y="435" as="geometry" />
         </mxCell>
         <mxCell id="BViAha-d1e_LK3_VJD56-6" edge="1" parent="1" source="BViAha-d1e_LK3_VJD56-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" target="tsQNPw73IEKCEaaoTTmP-54">
