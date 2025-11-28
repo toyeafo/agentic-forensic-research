@@ -343,6 +343,12 @@
         <mxCell id="tsQNPw73IEKCEaaoTTmP-54" parent="1" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.sql_reporting;" value="&lt;b&gt;Extracted Entities&lt;/b&gt;" vertex="1">
           <mxGeometry height="110" width="80" x="1189" y="415" as="geometry" />
         </mxCell>
+        <mxCell id="BViAha-d1e_LK3_VJD56-1" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/File.svg;" value="&lt;b&gt;Ground Truth&lt;/b&gt;" vertex="1">
+          <mxGeometry height="85.71428571428572" width="69.56571428571428" x="1370" y="309.29" as="geometry" />
+        </mxCell>
+        <mxCell id="BViAha-d1e_LK3_VJD56-2" parent="1" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;fillColor=strokeColor;align=center;outlineConnect=0;shape=mxgraph.fluid_power.x11440;points=[[0.04,1,0],[0.707,1,0]]" value="" vertex="1">
+          <mxGeometry height="56.04" width="111.42" x="490" y="420" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
