@@ -294,7 +294,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Mf4l6sECo_jDdHD0EK2d" name="Page-4">
-    <mxGraphModel dx="2066" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1111" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -320,7 +320,19 @@
           <mxGeometry height="480" width="590" x="520" y="120" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-46" parent="tsQNPw73IEKCEaaoTTmP-40" style="text;strokeColor=default;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;strokeWidth=3;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;THOUGHT (PLAN)&lt;/font&gt;" vertex="1">
-          <mxGeometry height="40" width="210" x="30" y="240" as="geometry" />
+          <mxGeometry height="40" width="210" x="70" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-7" parent="tsQNPw73IEKCEaaoTTmP-40" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Workflow Constraints" vertex="1">
+          <mxGeometry height="120" width="140" x="-83" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-8" parent="SIQVmDV_A-AJ0gnZtaZQ-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" value="W1 (Open)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-9" parent="SIQVmDV_A-AJ0gnZtaZQ-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" value="W2 (RegEx Guardrail)" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-10" parent="SIQVmDV_A-AJ0gnZtaZQ-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" value="W3 (Tuple Binding)" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-45" parent="1" style="text;strokeColor=default;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;perimeterSpacing=5;strokeWidth=3;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;ACTION (TOOL CALL)&lt;/font&gt;" vertex="1">
           <mxGeometry height="40" width="230" x="770" y="240" as="geometry" />
