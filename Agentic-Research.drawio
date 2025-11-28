@@ -317,7 +317,7 @@
           <mxGeometry height="80" width="108.11" x="312.3" y="210" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-40" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="AGENTIC CORE" vertex="1">
-          <mxGeometry height="480" width="630" x="520" y="120" as="geometry" />
+          <mxGeometry height="480" width="590" x="520" y="120" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-46" parent="tsQNPw73IEKCEaaoTTmP-40" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;THOUGHT (PLAN)&lt;/font&gt;" vertex="1">
           <mxGeometry height="40" width="210" x="30" y="240" as="geometry" />
@@ -336,6 +336,12 @@
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-51" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;fillColor=#0080FF;" value="" vertex="1">
           <mxGeometry height="190" width="70" x="865" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="tsQNPw73IEKCEaaoTTmP-53" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Log_Analytics_Query_Pack.svg;" value="&lt;b&gt;Behavioral Logs&lt;br&gt;Metrics: I&lt;sub&gt;plan&lt;/sub&gt;, R&lt;sub&gt;ver&lt;/sub&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="98" width="98" x="1180" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="tsQNPw73IEKCEaaoTTmP-54" parent="1" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.sql_reporting;" value="&lt;b&gt;Extracted Entities&lt;/b&gt;" vertex="1">
+          <mxGeometry height="110" width="80" x="1189" y="415" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
