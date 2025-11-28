@@ -182,6 +182,9 @@
         <mxCell id="59VxA244QghXuShkhSXZ-6" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Files.svg;" value="SqLite Database Files" vertex="1">
           <mxGeometry height="109.37" width="100" x="-740" y="130" as="geometry" />
         </mxCell>
+        <mxCell id="FP8OH9QZ1S0KHQMIfMNc-2" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/File.svg;" value="Ground Truth" vertex="1">
+          <mxGeometry height="100" width="81.16" x="300" y="130" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
