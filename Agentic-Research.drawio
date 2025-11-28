@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0" version="29.1.1" pages="3">
+  <diagram name="Page-1" id="Xv2WMxJVfn9aLJxScb7h">
+    <mxGraphModel dx="2066" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-6" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UIDLK1Z4J4KvmxiUKYxc-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;LLM REASONING &amp;amp; PLANNING&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Goal: Determine file type and artifacts to search and pattern match.&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-4" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UIDLK1Z4J4KvmxiUKYxc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-3" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;USER QUERY&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;(e.g., &quot;Find emails in hrcontacts.db&quot;)&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="320" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-8" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UIDLK1Z4J4KvmxiUKYxc-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;TOOL SELECTION &amp;amp; FORMULATION&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Select Shell Tool for non-destructive search&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Formulate Command (e.g., sqlite3 for database files)&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="320" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="YxFLZGA1GuI61Bb0DR2N-1" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UIDLK1Z4J4KvmxiUKYxc-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YxFLZGA1GuI61Bb0DR2N-2" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UIDLK1Z4J4KvmxiUKYxc-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;TERMINAL EXECUTION&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Every command and output is logged.&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="320" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-9" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" value="FINAL VERIFIED EVIDENCE Consolidated list of unique entities" vertex="1">
+          <mxGeometry height="90" width="200" x="320" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-11" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="UIDLK1Z4J4KvmxiUKYxc-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;OUTPUT ANALYSIS &amp;amp; CONSOLIDATION&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;LLM processes raw output.&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="320" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="YxFLZGA1GuI61Bb0DR2N-3" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="UIDLK1Z4J4KvmxiUKYxc-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="COMMAND LOG (e.g., grep -r -E&amp;nbsp;/home/student/...)" vertex="1">
+          <mxGeometry height="100" width="100" x="220" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-17" edge="1" parent="1" source="UIDLK1Z4J4KvmxiUKYxc-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="UIDLK1Z4J4KvmxiUKYxc-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIDLK1Z4J4KvmxiUKYxc-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;div&gt;RAW OUTPUT LOG&amp;nbsp;&lt;/div&gt;&lt;div&gt;(Emails)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="100" x="520" y="640" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pQI5DY6Wnly-YVUnSTZ5" name="Page-2">
+    <mxGraphModel dx="2066" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-1" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;LLM REASONING &amp;amp; PLANNING&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Goal: Determine file type and artifacts to search and pattern match.&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="340" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-3" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-4" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;USER QUERY&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;(e.g., &quot;Find emails in hrcontacts.db&quot;)&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-5" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;TOOL SELECTION &amp;amp; FORMULATION&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Select Shell Tool for non-destructive search&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Formulate Command (e.g., sqlite3 for database files)&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="340" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-7" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;TERMINAL EXECUTION&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;Auditable Execution: Every command and output is logged.&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="340" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-9" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="FINAL VERIFIED EVIDENCE Consolidated list of unique, forensically sound entities" vertex="1">
+          <mxGeometry height="90" width="200" x="340" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-10" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span class=&quot;user-query-container right-align-content&quot;&gt;&lt;span class=&quot;user-query-bubble-with-background ng-star-inserted&quot;&gt;&lt;span class=&quot;horizontal-container&quot;&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;OUTPUT ANALYSIS &amp;amp; CONSOLIDATION&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;query-text-line ng-star-inserted&quot;&gt;LLM processes raw output, handles split fields and reviews match indicators.&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="340" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-12" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="830" />
+              <mxPoint x="440" y="830" />
+            </Array>
+            <mxPoint x="440" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="COMMAND LOG (e.g., grep -r -E&amp;nbsp;/home/student/...)" vertex="1">
+          <mxGeometry height="100" width="100" x="240" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-14" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div&gt;RAW OUTPUT LOG&amp;nbsp;&lt;/div&gt;&lt;div&gt;(Lines with emails)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="100" x="540" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-16" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-17" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-18" connectable="0" parent="9mhzRKh5XpYN_6i6ceBv-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];movable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="YES" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-19" edge="1" parent="1" source="9mhzRKh5XpYN_6i6ceBv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="9mhzRKh5XpYN_6i6ceBv-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="670" />
+              <mxPoint x="300" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-20" connectable="0" parent="9mhzRKh5XpYN_6i6ceBv-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];movable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="NO" vertex="1">
+          <mxGeometry relative="1" x="-0.8222" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9mhzRKh5XpYN_6i6ceBv-21" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="Contains artifacts" vertex="1">
+          <mxGeometry height="100" width="140" x="370" y="620" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="5hlOqJ4QK7yiaVb8AnDY" name="Page-3">
+    <mxGraphModel dx="3166" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ch24jAv1JFaV8yJSEG5k-8" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="100" x="-660" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch24jAv1JFaV8yJSEG5k-9" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="100" x="-180" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch24jAv1JFaV8yJSEG5k-10" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="100" x="90" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch24jAv1JFaV8yJSEG5k-13" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="100" x="170" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="59VxA244QghXuShkhSXZ-1" parent="1" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.user;" value="Human User" vertex="1">
+          <mxGeometry height="85" width="70" x="-860" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="59VxA244QghXuShkhSXZ-2" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="-410" y="720" as="sourcePoint" />
+            <mxPoint x="-310" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59VxA244QghXuShkhSXZ-3" parent="1" style="swimlane;" value="Agentic AI" vertex="1">
+          <mxGeometry height="420" width="720" x="-550" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch24jAv1JFaV8yJSEG5k-14" parent="59VxA244QghXuShkhSXZ-3" style="html=1;dashed=0;whiteSpace=wrap;" value="System Prompt" vertex="1">
+          <mxGeometry height="80" width="130" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="59VxA244QghXuShkhSXZ-4" parent="59VxA244QghXuShkhSXZ-3" style="html=1;dashed=0;whiteSpace=wrap;" value="&lt;div&gt;User Query&lt;/div&gt;&lt;div&gt;E.g. FInd emails&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="130" x="30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="59VxA244QghXuShkhSXZ-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Artifacts&lt;/div&gt;&lt;div&gt;(Emails, Usernames, Time)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="170" x="270" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="59VxA244QghXuShkhSXZ-6" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Files.svg;" value="SqLite Database Files" vertex="1">
+          <mxGeometry height="109.37" width="100" x="-740" y="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
