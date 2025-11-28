@@ -341,13 +341,31 @@
           <mxGeometry height="98" width="98" x="1180" y="170" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-54" parent="1" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.sql_reporting;" value="&lt;b&gt;Extracted Entities&lt;/b&gt;" vertex="1">
-          <mxGeometry height="110" width="80" x="1189" y="415" as="geometry" />
+          <mxGeometry height="110" width="80" x="1180" y="416.38" as="geometry" />
         </mxCell>
         <mxCell id="BViAha-d1e_LK3_VJD56-1" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/File.svg;" value="&lt;b&gt;Ground Truth&lt;/b&gt;" vertex="1">
-          <mxGeometry height="85.71428571428572" width="69.56571428571428" x="1370" y="309.29" as="geometry" />
+          <mxGeometry height="85.71428571428572" width="69.56571428571428" x="1180" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="BViAha-d1e_LK3_VJD56-2" parent="1" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;fillColor=strokeColor;align=center;outlineConnect=0;shape=mxgraph.fluid_power.x11440;points=[[0.04,1,0],[0.707,1,0]]" value="" vertex="1">
-          <mxGeometry height="56.04" width="111.42" x="490" y="420" as="geometry" />
+        <mxCell id="BViAha-d1e_LK3_VJD56-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="90" width="90" x="1350.22" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="BViAha-d1e_LK3_VJD56-6" edge="1" parent="1" source="BViAha-d1e_LK3_VJD56-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" target="tsQNPw73IEKCEaaoTTmP-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BViAha-d1e_LK3_VJD56-7" edge="1" parent="1" source="tsQNPw73IEKCEaaoTTmP-40" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#0080FF;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1100.3400000000001" y="479.5" as="sourcePoint" />
+            <mxPoint x="1179.9989795918368" y="479" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BViAha-d1e_LK3_VJD56-8" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#0080FF;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1110" y="241" as="sourcePoint" />
+            <mxPoint x="1179.9989795918368" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BViAha-d1e_LK3_VJD56-9" edge="1" parent="1" source="BViAha-d1e_LK3_VJD56-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.992;entryY=0.665;entryDx=0;entryDy=0;entryPerimeter=0;" target="BViAha-d1e_LK3_VJD56-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
