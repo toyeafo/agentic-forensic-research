@@ -319,6 +319,15 @@
         <mxCell id="tsQNPw73IEKCEaaoTTmP-40" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="AGENTIC CORE" vertex="1">
           <mxGeometry height="560" width="570" x="580" y="120" as="geometry" />
         </mxCell>
+        <mxCell id="tsQNPw73IEKCEaaoTTmP-41" parent="tsQNPw73IEKCEaaoTTmP-40" style="shape=mxgraph.arrows.circular_arrow;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=2;strokeColor=#000000;rotation=120;" value="" vertex="1">
+          <mxGeometry height="160" width="210" x="309.21" y="309.06" as="geometry" />
+        </mxCell>
+        <mxCell id="tsQNPw73IEKCEaaoTTmP-42" parent="tsQNPw73IEKCEaaoTTmP-40" style="shape=mxgraph.arrows.circular_arrow;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=2;strokeColor=#000000;rotation=-120;" value="" vertex="1">
+          <mxGeometry height="170" width="220" x="40" y="267.07" as="geometry" />
+        </mxCell>
+        <mxCell id="tsQNPw73IEKCEaaoTTmP-43" parent="tsQNPw73IEKCEaaoTTmP-40" style="shape=mxgraph.arrows.circular_arrow;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=2;strokeColor=#000000;rotation=-5;" value="" vertex="1">
+          <mxGeometry height="170" width="240" x="200" y="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
