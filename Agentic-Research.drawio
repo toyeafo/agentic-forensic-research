@@ -152,7 +152,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Mf4l6sECo_jDdHD0EK2d" name="Page-4">
-    <mxGraphModel dx="2066" dy="1111" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -189,7 +189,7 @@
         <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-5" edge="1" parent="1" source="BViAha-d1e_LK3_VJD56-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=flexArrow;fillColor=#0080FF;strokeColor=#000000;" target="SIQVmDV_A-AJ0gnZtaZQ-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BViAha-d1e_LK3_VJD56-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;b&gt;Compare&lt;/b&gt;" vertex="1">
+        <mxCell id="BViAha-d1e_LK3_VJD56-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;b&gt;Validate&lt;/b&gt;" vertex="1">
           <mxGeometry height="90" width="90" x="1151" y="286" as="geometry" />
         </mxCell>
         <mxCell id="BViAha-d1e_LK3_VJD56-7" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#0080FF;" value="">
@@ -223,13 +223,13 @@
           <mxGeometry height="386" width="180" x="354" y="120" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-39" parent="ppfYtvicExSmHIBCJXep-2" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database.svg;" value="&lt;b&gt;Android SqLite Database&lt;/b&gt;" vertex="1">
-          <mxGeometry height="62" width="83.78" x="58.11" y="30" as="geometry" />
+          <mxGeometry height="62" width="83.78" x="48.11" y="30" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-19" parent="ppfYtvicExSmHIBCJXep-2" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Files.svg;" value="&lt;div&gt;&lt;b&gt;Goal: Discover&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Class I Email&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Entity&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="57" width="52.12" x="80.00000000000001" y="274" as="geometry" />
+          <mxGeometry height="57" width="52.12" x="63.94000000000001" y="270" as="geometry" />
         </mxCell>
         <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-7" parent="ppfYtvicExSmHIBCJXep-2" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Workflow Constraints" vertex="1">
-          <mxGeometry height="120" width="140" x="29.999999999999993" y="134" as="geometry" />
+          <mxGeometry height="120" width="140" x="19.999999999999993" y="133" as="geometry" />
         </mxCell>
         <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-8" parent="SIQVmDV_A-AJ0gnZtaZQ-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" value="W1 (Open)" vertex="1">
           <mxGeometry height="30" width="140" y="30" as="geometry" />
