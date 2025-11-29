@@ -219,7 +219,7 @@
         <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-4" parent="SIQVmDV_A-AJ0gnZtaZQ-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" value="Hallucination (H)" vertex="1">
           <mxGeometry height="30" width="140" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="ppfYtvicExSmHIBCJXep-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vertical Container" vertex="1">
+        <mxCell id="ppfYtvicExSmHIBCJXep-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Input" vertex="1">
           <mxGeometry height="386" width="180" x="354" y="120" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-39" parent="ppfYtvicExSmHIBCJXep-2" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database.svg;" value="&lt;b&gt;Android SqLite Database&lt;/b&gt;" vertex="1">
@@ -240,7 +240,7 @@
         <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-10" parent="SIQVmDV_A-AJ0gnZtaZQ-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" value="W3 (Tuple Binding)" vertex="1">
           <mxGeometry height="30" width="140" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="ppfYtvicExSmHIBCJXep-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vertical Container" vertex="1">
+        <mxCell id="ppfYtvicExSmHIBCJXep-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Output" vertex="1">
           <mxGeometry height="241" width="120" x="1003" y="148.5" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-54" parent="ppfYtvicExSmHIBCJXep-3" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.sql_reporting;" value="&lt;b&gt;Extracted Entities&lt;/b&gt;" vertex="1">
