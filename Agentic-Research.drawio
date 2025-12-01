@@ -183,9 +183,6 @@
         <mxCell id="tsQNPw73IEKCEaaoTTmP-50" parent="tsQNPw73IEKCEaaoTTmP-40" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.bendArrow;dy=15;dx=38;notch=0;arrowHead=55;rounded=1;rotation=-90;fillColor=#FFFFFF;" value="" vertex="1">
           <mxGeometry height="93" width="89.5" x="42.75" y="175.25" as="geometry" />
         </mxCell>
-        <mxCell id="BViAha-d1e_LK3_VJD56-1" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/File.svg;" value="&lt;b&gt;Ground Truth&lt;/b&gt;" vertex="1">
-          <mxGeometry height="58" width="47.07" x="1169" y="422" as="geometry" />
-        </mxCell>
         <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-5" edge="1" parent="1" source="BViAha-d1e_LK3_VJD56-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=flexArrow;fillColor=#FFFFFF;strokeColor=#000000;" target="SIQVmDV_A-AJ0gnZtaZQ-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -204,7 +201,7 @@
             <mxPoint x="998" y="191" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BViAha-d1e_LK3_VJD56-9" edge="1" parent="1" source="BViAha-d1e_LK3_VJD56-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.575;exitY=0.012;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;shape=flexArrow;fillColor=#FFFFFF;exitPerimeter=0;" target="BViAha-d1e_LK3_VJD56-4">
+        <mxCell id="BViAha-d1e_LK3_VJD56-9" edge="1" parent="1" source="BViAha-d1e_LK3_VJD56-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.575;exitY=0.012;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shape=flexArrow;fillColor=#FFFFFF;exitPerimeter=0;" target="BViAha-d1e_LK3_VJD56-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SIQVmDV_A-AJ0gnZtaZQ-1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Metrics" vertex="1">
@@ -241,13 +238,16 @@
           <mxGeometry height="30" width="140" y="90" as="geometry" />
         </mxCell>
         <mxCell id="ppfYtvicExSmHIBCJXep-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Output" vertex="1">
-          <mxGeometry height="241" width="120" x="1003" y="148.5" as="geometry" />
+          <mxGeometry height="264.5" width="469" x="1003" y="148.5" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-54" parent="ppfYtvicExSmHIBCJXep-3" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.sql_reporting;" value="&lt;b&gt;Extracted Entities&lt;/b&gt;" vertex="1">
           <mxGeometry height="47" width="30" x="41" y="155" as="geometry" />
         </mxCell>
         <mxCell id="tsQNPw73IEKCEaaoTTmP-53" parent="ppfYtvicExSmHIBCJXep-3" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Log_Analytics_Query_Pack.svg;" value="&lt;b&gt;Behavioral Logs&lt;br&gt;Metrics: I&lt;sub&gt;plan&lt;/sub&gt;, R&lt;sub&gt;ver&lt;/sub&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="52" width="52" x="29.5" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="BViAha-d1e_LK3_VJD56-1" parent="ppfYtvicExSmHIBCJXep-3" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/File.svg;" value="&lt;b&gt;Ground Truth&lt;/b&gt;" vertex="1">
+          <mxGeometry height="58" width="47.07" x="223" y="65.5" as="geometry" />
         </mxCell>
         <mxCell id="BViAha-d1e_LK3_VJD56-6" edge="1" parent="1" source="tsQNPw73IEKCEaaoTTmP-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.58;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=flexArrow;strokeColor=#000000;fillColor=#FFFFFF;exitPerimeter=0;" target="BViAha-d1e_LK3_VJD56-4">
           <mxGeometry relative="1" as="geometry" />
