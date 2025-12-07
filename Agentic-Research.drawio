@@ -260,31 +260,57 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;b&gt;SQLite App Database&lt;/b&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;with known ground truth&lt;/div&gt;" vertex="1">
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-17" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#D4E1F5;" value="&lt;div&gt;&lt;b&gt;SQLite App Databases&lt;/b&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;with known ground truth&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="150" x="10" y="170" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" value="&lt;div&gt;&lt;b&gt;Evidence Entity Types&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Messages/Threads&lt;/li&gt;&lt;li&gt;Emails&lt;/li&gt;&lt;li&gt;Phone Numbers&lt;/li&gt;&lt;li&gt;Attachments&lt;/li&gt;&lt;li&gt;Locations&lt;/li&gt;&lt;li&gt;Timestamps&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-18" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;fillColor=#D4E1F5;" value="&lt;div&gt;&lt;b&gt;Evidence Entity Types&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Messages/Threads&lt;/li&gt;&lt;li&gt;Emails&lt;/li&gt;&lt;li&gt;Phone Numbers&lt;/li&gt;&lt;li&gt;Attachments&lt;/li&gt;&lt;li&gt;Locations&lt;/li&gt;&lt;li&gt;Timestamps&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="150" width="150" x="10" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;Ground Truth Labels&lt;/b&gt;" vertex="1">
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-21" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-25" connectable="0" parent="NkRsP9M30fiHK4AD_b4k-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Ground Truth for Scoring" vertex="1">
+          <mxGeometry relative="1" x="-0.1929" y="2" as="geometry">
+            <mxPoint x="10" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#D4E1F5;" value="&lt;b&gt;Ground Truth Labels&lt;/b&gt;" vertex="1">
           <mxGeometry height="60" width="150" x="10" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" value="&lt;div&gt;&lt;b&gt;Workflows to Compare&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Direct (Baseline)&lt;/li&gt;&lt;li&gt;Constrained&lt;/li&gt;&lt;li&gt;Provenance-aware (records linked steps)&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-20" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;fillColor=#D4E1F5;" value="&lt;div&gt;&lt;b&gt;Workflows to Compare&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Direct (Baseline)&lt;/li&gt;&lt;li&gt;Constrained&lt;/li&gt;&lt;li&gt;Provenance-aware (records linked steps)&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="150" width="150" x="270" y="195" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-11" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
-          <mxGeometry height="240" width="240" x="520" y="150" as="geometry" />
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-23" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;b&gt;Recorder&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Captures thought, action, observations/results&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Links entries so hidden edits show makes small proofs for later checks&lt;/li&gt;&lt;li&gt;Only used in Provenance-aware workflow&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="160" width="240" x="520" y="470" as="geometry" />
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-11" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="280" width="280" x="520" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;b&gt;Found Evidence (Per Run)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Extracted entities + their sources&lt;/div&gt;&lt;div&gt;notes on checks and tool calls&lt;/div&gt;" vertex="1">
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-24" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;&lt;b&gt;Recorder&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Captures thought, action, observations/results&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Links entries so hidden edits show makes small proofs for later checks&lt;/li&gt;&lt;li&gt;Only used in Provenance-aware workflow&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="280" x="520" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#D4E1F5;" value="&lt;div&gt;&lt;b&gt;Found Evidence (Per Run)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Extracted entities + sources&lt;/div&gt;&lt;div&gt;notes on checks and tool calls&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="170" x="910" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;b&gt;Scoring vs Ground Truth&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Precision/Recall&lt;/li&gt;&lt;li&gt;Hallucination Rate&lt;/li&gt;&lt;li&gt;Provenance completeness&lt;/li&gt;&lt;li&gt;Proof size &amp;amp; check time&lt;/li&gt;&lt;li&gt;Runtime overhead&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-22" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#D4E1F5;" value="&lt;div&gt;&lt;b&gt;Scoring vs Ground Truth&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Precision/Recall&lt;/li&gt;&lt;li&gt;Hallucination Rate&lt;/li&gt;&lt;li&gt;Provenance completeness&lt;/li&gt;&lt;li&gt;Proof size &amp;amp; check time&lt;/li&gt;&lt;li&gt;Runtime overhead&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="170" width="170" x="910" y="290" as="geometry" />
         </mxCell>
-        <mxCell id="NkRsP9M30fiHK4AD_b4k-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;b&gt;Outputs&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Benchmark Results&lt;/li&gt;&lt;li&gt;Proof Bundles + verifier&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;&lt;b&gt;Outputs&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Benchmark Results&lt;/li&gt;&lt;li&gt;Proof Bundles + verifier&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="170" x="910" y="520" as="geometry" />
         </mxCell>
       </root>
