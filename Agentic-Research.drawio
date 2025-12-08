@@ -301,6 +301,14 @@
         <mxCell id="NkRsP9M30fiHK4AD_b4k-24" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-44" edge="1" parent="1" source="NkRsP9M30fiHK4AD_b4k-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="NkRsP9M30fiHK4AD_b4k-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkRsP9M30fiHK4AD_b4k-45" connectable="0" parent="NkRsP9M30fiHK4AD_b4k-44" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Validation&lt;/div&gt;&lt;div&gt;(Success/Fail)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3" as="geometry">
+            <mxPoint x="20" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="NkRsP9M30fiHK4AD_b4k-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;&lt;b&gt;Recorder&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Captures thought, action, observations/results&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Links entries so hidden edits show makes small proofs for later checks&lt;/li&gt;&lt;li&gt;Only used in Provenance-aware workflow&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="160" width="280" x="520" y="330" as="geometry" />
         </mxCell>
